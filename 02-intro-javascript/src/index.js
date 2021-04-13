@@ -1,13 +1,20 @@
-const nombre = 'Jesus';
-const apellido = 'Ramirez';
+//objetos literales
 
-// const nombreCompleto = nombre + ' ' + apellido;
-const nombreCompleto= `${nombre} ${apellido}`;
+const persona = {
+    nombre: 'Jesus',
+    apellido: 'Ramirez',
+    edad: 21,
+    direccion: {
+        ciudad: 'CDMX',
+        zip: 5200,
+    }
+};
 
-console.log(nombreCompleto);
+// console.table(persona);
+console.log(persona);
 
-function getSaludos(nombre) {
-    return 'Hola ' + nombre;
-}
+// const persona2= persona;
+// persona2.nombre= 'Javier';
 
-console.log(`Este es un textp ${getSaludos(nombre) } `);
+// console.log(persona2);
+//Jamas hacer lo de arriba
